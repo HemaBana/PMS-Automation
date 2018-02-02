@@ -77,7 +77,7 @@ public class Eligibility_Raise extends BaseTest{
         
     	Thread.sleep(7000);
         driver.findElement(By.xpath("(//p[contains(text(),'James Smith')])[8]")).click();
-       	Thread.sleep(5000);
+       	Thread.sleep(5000) ;
     
         
         e.clickEligibilityTab() ;
