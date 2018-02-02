@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,7 @@ import generic.Lib;
 import pages.LoginPage;
 import pages.Scheduling;
 import pages.SuperBill;
+import pages.SuperBillGrid;
 
 public class DayView
 {
@@ -61,8 +63,14 @@ public class DayView
 			driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 			
 		 Scheduling	 sd =new Scheduling(driver);
-		 
-	
+		 sd.clickSelectProvider();
+		 sd.clickDayView();
+		 SuperBill s =new SuperBill(driver);
+	     SuperBillGrid su =new SuperBillGrid(driver);
+	     Actions act = new Actions(driver);
+	     act.doubleClick(driver.findElement(By.xpath("(//div[contains(@class,'dayview')])[51]"))).build().perform();
+	     Thread.sleep(7000);
+	     
 			
 
 	}
