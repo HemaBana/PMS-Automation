@@ -80,7 +80,7 @@ public class Eligibility_Raise extends BaseTest{
        	Thread.sleep(5000);
     
         
-        e.clickEligibilityTab();
+        e.clickEligibilityTab() ;
      	Thread.sleep(5000);
         e.clickRaiseER();
      	Thread.sleep(5000);
