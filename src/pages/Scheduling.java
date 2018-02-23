@@ -47,6 +47,32 @@ public class Scheduling extends LoginPage {
 	 @FindBy(xpath="//button[text()='Send']")
 	 private WebElement Send;
 	 
+	 @FindBy(xpath="(//button[contains(text(),'No Show')])[1]")
+	 private WebElement NoShow;
+	 
+	 @FindBy(xpath="(//textarea[@name='reason'])[4]")
+	 private WebElement NoShowReason;
+	 
+	 @FindBy(xpath="//button[text()='Save']")
+	 private WebElement NoReasonSave;
+	 
+	 @FindBy(xpath="//a[text()='Week']")
+	 private WebElement WeekLink;
+	 
+	 @FindBy(xpath="(//div[contains(@class,'dayview ')])[65]")
+	 private WebElement SelectWeek;
+	 
+	 @FindBy(xpath="(//button[text()='Cancel'])[1]")
+	 private WebElement Cancel;
+	 
+	 
+	 @FindBy(xpath="(//textarea[@name='reason'])[4]")
+	 private WebElement CancelReason;
+	 
+	 @FindBy(xpath="//button[text()='Save']")
+	 private WebElement CancelSave;
+	 
+	 
 	 public  Scheduling(WebDriver driver)
 	 {
 		super(driver); 
@@ -69,8 +95,8 @@ public class Scheduling extends LoginPage {
 		Dateselect.click();
 	 }
 
-	public void setReason(String R1){
-		Reason.sendKeys(R1);
+	public void setReason(String R11){
+		Reason.sendKeys(R11);
 	 }
 	
 
@@ -121,6 +147,49 @@ public class Scheduling extends LoginPage {
 	 {
 
 		DayView.click();
+	 }
+	
+	public void clickNoShow()
+	 {
+
+		NoShow.click();
+	 }
+	
+	public void setNoShowReason(String R2){
+		 NoShowReason.sendKeys(R2);
+	 }
+	public void clickNoReasonSave()
+	 {
+
+		NoReasonSave.click();
+	 }
+	
+	public void clickWeekLink()
+	 {
+
+		 WeekLink.click();
+	 }
+	
+	public void clickSelectWeek()
+	 {
+
+		SelectWeek.click();
+	 }
+	
+	public void clickCancel()
+	 {
+
+		Cancel.click();
+	 }
+	
+	public void setCancelReason(String R3){
+		CancelReason.sendKeys(R3);
+	 }
+	
+	public void clickCancelSave()
+	 {
+
+		CancelSave.click();
 	 }
 	
 	

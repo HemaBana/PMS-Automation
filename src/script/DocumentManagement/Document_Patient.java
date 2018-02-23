@@ -2,18 +2,13 @@ package script.DocumentManagement;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 
-import script.Document_Upload;
-
-
-
-public class Document_Patient extends Document_Add{
+public class Document_Patient extends DocumentManagement_Scenarios{
 	@Test(priority=5)
 public void testDocument_Patient() throws InterruptedException{
 	

@@ -10,7 +10,7 @@ import generic.IAutoConst;
 import generic.Lib;
 import pages.Facilities;
 
-public class Facility_Edit extends Facility_Add{
+public class Facility_Edit extends Facility_Scenarios{
 	@Test(priority=2)
 	public void testFacility_Edit() throws InterruptedException{
 	

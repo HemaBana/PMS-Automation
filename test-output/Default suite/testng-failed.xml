@@ -3,13 +3,55 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.DomainValues.Domain_Edit">
+      <class name="script.DomainValues.Domain_Add">
         <methods>
-          <include name="testDomain_Edit"/>
           <include name="closeApplication"/>
           <include name="openApplication"/>
+          <include name="testLogin"/>
         </methods>
-      </class> <!-- script.DomainValues.Domain_Edit -->
+      </class> <!-- script.DomainValues.Domain_Add -->
+      <class name="script.Facility.Facility_Edit">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Facility.Facility_Edit -->
+      <class name="script.PayerSettings.Payer_Edit">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.PayerSettings.Payer_Edit -->
+      <class name="script.ServiceManager.Service_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.ServiceManager.Service_Add -->
+      <class name="script.PayerSettings.Payer_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.PayerSettings.Payer_Add -->
+      <class name="script.ServiceManager.Service_Edit">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.ServiceManager.Service_Edit -->
+      <class name="generic.BaseTest">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- generic.BaseTest -->
       <class name="generic.BaseTest$GenerateExtentReport">
         <methods>
           <include name="endReport"/>
@@ -19,6 +61,127 @@
           <include name="skipTest"/>
         </methods>
       </class> <!-- generic.BaseTest$GenerateExtentReport -->
+      <class name="script.SuperBill_Grid">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.SuperBill_Grid -->
+      <class name="script.AuthorizedRepresentative.AuthRep_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.AuthorizedRepresentative.AuthRep_Add -->
+      <class name="script.Facility.Facility_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Facility.Facility_Add -->
+      <class name="script.Authorized_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Authorized_Add -->
+      <class name="script.Scheduling.DefaultView">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Scheduling.DefaultView -->
+      <class name="script.DomainValues.Domain_Edit">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.DomainValues.Domain_Edit -->
+      <class name="script.SuperBill_Create">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.SuperBill_Create -->
+      <class name="script.Charge_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Charge_Add -->
+      <class name="script.Document_Upload">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Document_Upload -->
+      <class name="script.Eligibility_Raise">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Eligibility_Raise -->
+      <class name="script.Service_Addon">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Service_Addon -->
+      <class name="ExtentReports.GenerateExtentReport">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="failTest"/>
+          <include name="getResult"/>
+          <include name="skipTest"/>
+        </methods>
+      </class> <!-- ExtentReports.GenerateExtentReport -->
+      <class name="script.Facility_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Facility_Add -->
+      <class name="script.DocumentManagement.Document_Patient">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.DocumentManagement.Document_Patient -->
+      <class name="script.DocumentManagement.Document_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.DocumentManagement.Document_Add -->
+      <class name="script.Domain_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Domain_Add -->
+      <class name="script.Ledger_Add">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- script.Ledger_Add -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

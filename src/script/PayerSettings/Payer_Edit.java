@@ -12,7 +12,7 @@ import generic.Lib;
 import pages.PayerSettings;
 
 
-public class Payer_Edit extends Payer_Add{
+public class Payer_Edit extends Payer_Scenarios{
 	@Test(priority=3)
 	public void testPayer_Edit() throws InterruptedException{
 		String P1=Lib.getCellValue(IAutoConst.XLPATH,"Payer_Edit",1,0);

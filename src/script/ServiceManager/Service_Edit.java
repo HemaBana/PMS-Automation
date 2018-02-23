@@ -7,7 +7,7 @@ import generic.IAutoConst;
 import generic.Lib;
 import pages.ServiceManager;
 
-public class Service_Edit extends Service_Add{
+public class Service_Edit extends ServiceManager_Scenarios{
 
 	@Test(priority=3)
 	public void testService_Edit() throws InterruptedException{

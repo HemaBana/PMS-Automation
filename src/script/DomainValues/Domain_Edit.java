@@ -2,7 +2,6 @@ package script.DomainValues;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
@@ -10,7 +9,7 @@ import generic.IAutoConst;
 import generic.Lib;
 import pages.DomainValues;
 
-public class Domain_Edit extends Domain_Add{
+public class Domain_Edit extends Domain_Scenarios{
 	@Test(priority=3)
 	public void testDomain_Edit() throws InterruptedException{
 		String v1=Lib.getCellValue(IAutoConst.XLPATH,"Domain_Edit",1,0);
